@@ -1,5 +1,9 @@
+import os
+os.system("pip install torch==2.2.2+cpu torchvision==0.17.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu --quiet")
+os.system("pip install git+https://github.com/openai/CLIP.git --quiet")
+
 import streamlit as st
-import os, random, torch
+import random, torch
 from PIL import Image
 import numpy as np
 import clip
